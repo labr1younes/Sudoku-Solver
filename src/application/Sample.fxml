@@ -15,7 +15,8 @@
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
          <children>
             <Button fx:id="solve" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#solve_action" prefHeight="55.0" prefWidth="89.0" text="Solve" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="497.0" AnchorPane.topAnchor="12.0" />
-            <Text fx:id="text" layoutX="176.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="men ba3de ncouf cha neketb" wrappingWidth="246.13671875" />
+            <Text fx:id="text" layoutX="299.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" wrappingWidth="279.13671875" AnchorPane.bottomAnchor="21.0" AnchorPane.rightAnchor="19.86328125" AnchorPane.topAnchor="21.0" />
+            <Button fx:id="clear" layoutX="124.0" layoutY="12.0" mnemonicParsing="false" onAction="#clear_action" prefHeight="55.0" prefWidth="89.0" text="Clear" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="124.0" AnchorPane.topAnchor="12.0" />
          </children></AnchorPane>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
          <children>

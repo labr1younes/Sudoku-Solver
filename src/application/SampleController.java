@@ -20,6 +20,9 @@ public class SampleController {
 	
 	@FXML
     private Button solve;
+	
+	@FXML 
+	private Button clear ;
 
     @FXML
     private ResourceBundle resources;
@@ -428,7 +431,7 @@ public class SampleController {
     	if (flag) {
     		text.setText("We are solving the Sudoku ") ;
     		if (S_solve(S_table)) {
-    			printSudoku(S_table);
+    			//printSudoku(S_table);
     			text.setText("All done");   			
     			show_results(S_table);
     		}
@@ -438,6 +441,21 @@ public class SampleController {
     	}
     }
     
+    @FXML
+    void clear_action(ActionEvent event) {
+    	
+    	n00.clear(); n10.clear(); n20.clear(); n30.clear(); n40.clear(); n50.clear(); n60.clear(); n70.clear();n80.clear();
+ 		n01.clear(); n11.clear(); n21.clear(); n31.clear(); n41.clear(); n51.clear(); n61.clear(); n71.clear();n81.clear();
+   		n02.clear(); n12.clear(); n22.clear(); n32.clear(); n42.clear(); n52.clear(); n62.clear(); n72.clear();n82.clear();
+   		n03.clear(); n13.clear(); n23.clear(); n33.clear(); n43.clear(); n53.clear(); n63.clear(); n73.clear();n83.clear();
+   		n04.clear(); n14.clear(); n24.clear(); n34.clear(); n44.clear(); n54.clear(); n64.clear(); n74.clear();n84.clear();
+   		n05.clear(); n15.clear(); n25.clear(); n35.clear(); n45.clear(); n55.clear(); n65.clear(); n75.clear();n85.clear();
+   		n06.clear(); n16.clear(); n26.clear(); n36.clear(); n46.clear(); n56.clear(); n66.clear(); n76.clear();n86.clear();
+   		n07.clear(); n17.clear(); n27.clear(); n37.clear(); n47.clear(); n57.clear(); n67.clear(); n77.clear();n87.clear();
+   		n08.clear(); n18.clear(); n28.clear(); n38.clear(); n48.clear(); n58.clear(); n68.clear(); n78.clear();n88.clear();
+   		
+   		text.setText("All Clear ");
+    }
 
     @FXML
     void initialize() {
